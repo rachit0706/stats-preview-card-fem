@@ -62,23 +62,14 @@ main {
 }
 
 picture {
-    position: relative;
-}
-
-picture::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(118, 32, 118);
-    opacity: 0.5;
+    background-color: var(--soft-violet);
 }
 
 img {
     width: 100%;
     height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 .content {
@@ -89,7 +80,7 @@ img {
 
 .content-heading {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 900;
     padding: 1.5rem;
 }
@@ -97,7 +88,7 @@ img {
 .violet {
     color: var(--soft-violet);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .content-para {
@@ -141,15 +132,15 @@ img {
     color: var(--white);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     body {
         text-align: center;
     }
     
-    .content, picture {
+    /* .content, picture {
         flex: 100%;
-    }
+    } */
 
     .content {
         justify-content: center;
